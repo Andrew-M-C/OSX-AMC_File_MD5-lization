@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D23163AF1A8498FC00D02E50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23163AE1A8498FC00D02E50 /* AppDelegate.m */; };
+		D23163B11A8498FC00D02E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D23163B01A8498FC00D02E50 /* main.m */; };
+		D23163B31A8498FC00D02E50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23163B21A8498FC00D02E50 /* Images.xcassets */; };
+		D23163B61A8498FC00D02E50 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23163B41A8498FC00D02E50 /* MainMenu.xib */; };
+		D23163C21A8498FC00D02E50 /* AMC_File_MD5_lizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23163C11A8498FC00D02E50 /* AMC_File_MD5_lizationTests.m */; };
+		D23163D41A849B6700D02E50 /* AMCCommonLib.c in Sources */ = {isa = PBXBuildFile; fileRef = D23163CF1A849B6700D02E50 /* AMCCommonLib.c */; };
+		D23163D51A849B6700D02E50 /* AMCmd5.c in Sources */ = {isa = PBXBuildFile; fileRef = D23163D21A849B6700D02E50 /* AMCmd5.c */; };
+		D23163DB1A849B7300D02E50 /* AMCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D23163D81A849B7300D02E50 /* AMCTools.m */; };
+		D23163DC1A849B7300D02E50 /* AMCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23163DA1A849B7300D02E50 /* AMCViewController.m */; };
+		D23163DE1A849CFE00D02E50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23163DD1A849CFE00D02E50 /* Foundation.framework */; };
+		D23163E11A849D3700D02E50 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23163E01A849D3700D02E50 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D23163BC1A8498FC00D02E50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D23163A01A8498FC00D02E50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D23163A71A8498FC00D02E50;
+			remoteInfo = "AMC File MD5-lization";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D23163A81A8498FC00D02E50 /* AMC File MD5-lization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMC File MD5-lization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23163AC1A8498FC00D02E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23163AD1A8498FC00D02E50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D23163AE1A8498FC00D02E50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D23163B01A8498FC00D02E50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D23163B21A8498FC00D02E50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D23163B51A8498FC00D02E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D23163BB1A8498FC00D02E50 /* AMC File MD5-lizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMC File MD5-lizationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23163C01A8498FC00D02E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23163C11A8498FC00D02E50 /* AMC_File_MD5_lizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMC_File_MD5_lizationTests.m; sourceTree = "<group>"; };
+		D23163CF1A849B6700D02E50 /* AMCCommonLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AMCCommonLib.c; path = "Common Files/AMC Unix Tools/AMCCommonLib.c"; sourceTree = "<group>"; };
+		D23163D01A849B6700D02E50 /* AMCCommonLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCCommonLib.h; path = "Common Files/AMC Unix Tools/AMCCommonLib.h"; sourceTree = "<group>"; };
+		D23163D11A849B6700D02E50 /* AMCDataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCDataTypes.h; path = "Common Files/AMC Unix Tools/AMCDataTypes.h"; sourceTree = "<group>"; };
+		D23163D21A849B6700D02E50 /* AMCmd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AMCmd5.c; path = "Common Files/AMC Unix Tools/AMCmd5.c"; sourceTree = "<group>"; };
+		D23163D31A849B6700D02E50 /* AMCmd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCmd5.h; path = "Common Files/AMC Unix Tools/AMCmd5.h"; sourceTree = "<group>"; };
+		D23163D61A849B7300D02E50 /* AMCObjCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCObjCTools.h; path = "Common Files/AMC Cocoa Tools/AMCObjCTools.h"; sourceTree = "<group>"; };
+		D23163D71A849B7300D02E50 /* AMCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCTools.h; path = "Common Files/AMC Cocoa Tools/AMCTools.h"; sourceTree = "<group>"; };
+		D23163D81A849B7300D02E50 /* AMCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMCTools.m; path = "Common Files/AMC Cocoa Tools/AMCTools.m"; sourceTree = "<group>"; };
+		D23163D91A849B7300D02E50 /* AMCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCViewController.h; path = "Common Files/AMC Cocoa Tools/AMCViewController.h"; sourceTree = "<group>"; };
+		D23163DA1A849B7300D02E50 /* AMCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMCViewController.m; path = "Common Files/AMC Cocoa Tools/AMCViewController.m"; sourceTree = "<group>"; };
+		D23163DD1A849CFE00D02E50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D23163E01A849D3700D02E50 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D23163A51A8498FC00D02E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23163E11A849D3700D02E50 /* Cocoa.framework in Frameworks */,
+				D23163DE1A849CFE00D02E50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23163B81A8498FC00D02E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D231639F1A8498FB00D02E50 = {
+			isa = PBXGroup;
+			children = (
+				D23163DF1A849D1900D02E50 /* Frameworks */,
+				D23163CC1A849A7100D02E50 /* Common Files */,
+				D23163AA1A8498FC00D02E50 /* AMC File MD5-lization */,
+				D23163BE1A8498FC00D02E50 /* AMC File MD5-lizationTests */,
+				D23163A91A8498FC00D02E50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D23163A91A8498FC00D02E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D23163A81A8498FC00D02E50 /* AMC File MD5-lization.app */,
+				D23163BB1A8498FC00D02E50 /* AMC File MD5-lizationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D23163AA1A8498FC00D02E50 /* AMC File MD5-lization */ = {
+			isa = PBXGroup;
+			children = (
+				D23163CB1A84991000D02E50 /* Root Control */,
+				D23163AB1A8498FC00D02E50 /* Supporting Files */,
+			);
+			path = "AMC File MD5-lization";
+			sourceTree = "<group>";
+		};
+		D23163AB1A8498FC00D02E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D23163AC1A8498FC00D02E50 /* Info.plist */,
+				D23163B01A8498FC00D02E50 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D23163BE1A8498FC00D02E50 /* AMC File MD5-lizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D23163C11A8498FC00D02E50 /* AMC_File_MD5_lizationTests.m */,
+				D23163BF1A8498FC00D02E50 /* Supporting Files */,
+			);
+			path = "AMC File MD5-lizationTests";
+			sourceTree = "<group>";
+		};
+		D23163BF1A8498FC00D02E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D23163C01A8498FC00D02E50 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D23163CB1A84991000D02E50 /* Root Control */ = {
+			isa = PBXGroup;
+			children = (
+				D23163AD1A8498FC00D02E50 /* AppDelegate.h */,
+				D23163AE1A8498FC00D02E50 /* AppDelegate.m */,
+				D23163B21A8498FC00D02E50 /* Images.xcassets */,
+				D23163B41A8498FC00D02E50 /* MainMenu.xib */,
+			);
+			name = "Root Control";
+			sourceTree = "<group>";
+		};
+		D23163CC1A849A7100D02E50 /* Common Files */ = {
+			isa = PBXGroup;
+			children = (
+				D23163CE1A849B5300D02E50 /* AMC Unix Tools */,
+				D23163CD1A849B4900D02E50 /* AMC Cocoa Tools */,
+			);
+			name = "Common Files";
+			sourceTree = "<group>";
+		};
+		D23163CD1A849B4900D02E50 /* AMC Cocoa Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D23163D61A849B7300D02E50 /* AMCObjCTools.h */,
+				D23163D71A849B7300D02E50 /* AMCTools.h */,
+				D23163D81A849B7300D02E50 /* AMCTools.m */,
+				D23163D91A849B7300D02E50 /* AMCViewController.h */,
+				D23163DA1A849B7300D02E50 /* AMCViewController.m */,
+			);
+			name = "AMC Cocoa Tools";
+			sourceTree = "<group>";
+		};
+		D23163CE1A849B5300D02E50 /* AMC Unix Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D23163CF1A849B6700D02E50 /* AMCCommonLib.c */,
+				D23163D01A849B6700D02E50 /* AMCCommonLib.h */,
+				D23163D11A849B6700D02E50 /* AMCDataTypes.h */,
+				D23163D21A849B6700D02E50 /* AMCmd5.c */,
+				D23163D31A849B6700D02E50 /* AMCmd5.h */,
+			);
+			name = "AMC Unix Tools";
+			sourceTree = "<group>";
+		};
+		D23163DF1A849D1900D02E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D23163E01A849D3700D02E50 /* Cocoa.framework */,
+				D23163DD1A849CFE00D02E50 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D23163A71A8498FC00D02E50 /* AMC File MD5-lization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23163C51A8498FC00D02E50 /* Build configuration list for PBXNativeTarget "AMC File MD5-lization" */;
+			buildPhases = (
+				D23163A41A8498FC00D02E50 /* Sources */,
+				D23163A51A8498FC00D02E50 /* Frameworks */,
+				D23163A61A8498FC00D02E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AMC File MD5-lization";
+			productName = "AMC File MD5-lization";
+			productReference = D23163A81A8498FC00D02E50 /* AMC File MD5-lization.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D23163BA1A8498FC00D02E50 /* AMC File MD5-lizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23163C81A8498FC00D02E50 /* Build configuration list for PBXNativeTarget "AMC File MD5-lizationTests" */;
+			buildPhases = (
+				D23163B71A8498FC00D02E50 /* Sources */,
+				D23163B81A8498FC00D02E50 /* Frameworks */,
+				D23163B91A8498FC00D02E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D23163BD1A8498FC00D02E50 /* PBXTargetDependency */,
+			);
+			name = "AMC File MD5-lizationTests";
+			productName = "AMC File MD5-lizationTests";
+			productReference = D23163BB1A8498FC00D02E50 /* AMC File MD5-lizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D23163A01A8498FC00D02E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Andrew Chang";
+				TargetAttributes = {
+					D23163A71A8498FC00D02E50 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D23163BA1A8498FC00D02E50 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D23163A71A8498FC00D02E50;
+					};
+				};
+			};
+			buildConfigurationList = D23163A31A8498FC00D02E50 /* Build configuration list for PBXProject "AMC File MD5-lization" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D231639F1A8498FB00D02E50;
+			productRefGroup = D23163A91A8498FC00D02E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D23163A71A8498FC00D02E50 /* AMC File MD5-lization */,
+				D23163BA1A8498FC00D02E50 /* AMC File MD5-lizationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D23163A61A8498FC00D02E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23163B31A8498FC00D02E50 /* Images.xcassets in Resources */,
+				D23163B61A8498FC00D02E50 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23163B91A8498FC00D02E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D23163A41A8498FC00D02E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23163D51A849B6700D02E50 /* AMCmd5.c in Sources */,
+				D23163B11A8498FC00D02E50 /* main.m in Sources */,
+				D23163D41A849B6700D02E50 /* AMCCommonLib.c in Sources */,
+				D23163DB1A849B7300D02E50 /* AMCTools.m in Sources */,
+				D23163DC1A849B7300D02E50 /* AMCViewController.m in Sources */,
+				D23163AF1A8498FC00D02E50 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23163B71A8498FC00D02E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23163C21A8498FC00D02E50 /* AMC_File_MD5_lizationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D23163BD1A8498FC00D02E50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D23163A71A8498FC00D02E50 /* AMC File MD5-lization */;
+			targetProxy = D23163BC1A8498FC00D02E50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D23163B41A8498FC00D02E50 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23163B51A8498FC00D02E50 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D23163C31A8498FC00D02E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.9;
+			};
+			name = Debug;
+		};
+		D23163C41A8498FC00D02E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.9;
+			};
+			name = Release;
+		};
+		D23163C61A8498FC00D02E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "AMC File MD5-lization/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D23163C71A8498FC00D02E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "AMC File MD5-lization/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D23163C91A8498FC00D02E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AMC File MD5-lizationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMC File MD5-lization.app/Contents/MacOS/AMC File MD5-lization";
+			};
+			name = Debug;
+		};
+		D23163CA1A8498FC00D02E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AMC File MD5-lizationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMC File MD5-lization.app/Contents/MacOS/AMC File MD5-lization";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D23163A31A8498FC00D02E50 /* Build configuration list for PBXProject "AMC File MD5-lization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23163C31A8498FC00D02E50 /* Debug */,
+				D23163C41A8498FC00D02E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23163C51A8498FC00D02E50 /* Build configuration list for PBXNativeTarget "AMC File MD5-lization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23163C61A8498FC00D02E50 /* Debug */,
+				D23163C71A8498FC00D02E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23163C81A8498FC00D02E50 /* Build configuration list for PBXNativeTarget "AMC File MD5-lizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23163C91A8498FC00D02E50 /* Debug */,
+				D23163CA1A8498FC00D02E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D23163A01A8498FC00D02E50 /* Project object */;
+}
