@@ -23,7 +23,7 @@
 	if (self) {
         // Initialization code here.
 		self.delegate = nil;
-		_identifier = nil;
+		self.identifier = nil;
 		_AMCViewController_isAddedSubViewBefore = NO;
 	}
     

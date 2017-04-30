@@ -306,14 +306,14 @@
 		NSString *ret = nil;
 		
 		if ([AMCTools string:fileTrunk
-	matchesRegularExpression:@"^(?:19|20|21)\\d\\d(?:0\\d|10|11|12)(?:(?:[0-2]\\d)|30|31)-(?:[01]\\d|2[0-3])(?:[0-5]\\d)-[\\da-fA-F]{32}"])
+	matchesRegularExpression:@"^(?:19|20|21)\\d\\d(?:0\\d|10|11|12)(?:(?:[0-2]\\d)|30|31)-(?:[01]\\d|2[0-3])(?:[0-5]\\d)(?:[0-5]\\d)-[\\da-fA-F]{32}"])
 		{
 			ret = [fileTrunk substringToIndex:13];
 		}
 		else
 		{
 			NSDate *date = (NSDate*)[[fileMgr attributesOfItemAtPath:filePath error:NULL] objectForKey:NSFileModificationDate];
-			ret = [AMCTools timeStringForDate:date withDateFormat:@"YYYYMMdd-HHmm"];
+			ret = [AMCTools timeStringForDate:date withDateFormat:@"YYYYMMdd-HHmmSS"];
 //			AMCDebug(@"Mod time for %@: %@", fileTrunk, ret);
 		}
 		
