@@ -304,16 +304,27 @@
 	{
 		NSString *fileTrunk = [fileParts objectAtIndex:[fileParts count] - 1];
 		NSString *ret = nil;
+		BOOL shoulDReCalc = NO;
 		
 		if ([AMCTools string:fileTrunk
-	matchesRegularExpression:@"^(?:19|20|21)\\d\\d(?:0\\d|10|11|12)(?:(?:[0-2]\\d)|30|31)-(?:[01]\\d|2[0-3])(?:[0-5]\\d)(?:[0-5]\\d)-[\\da-fA-F]{32}"])
+	matchesRegularExpression:@"^(?:19|20|21)\\d\\d(?:0\\d|10|11|12)(?:(?:[0-2]\\d)|30|31)-(?:[01]\\d|2[0-3])(?:[0-5]\\d)00-[\\da-fA-F]{32}.*"])
 		{
+			shoulDReCalc = YES;
+		}
+		else if ([AMCTools string:fileTrunk
+	matchesRegularExpression:@"^(?:19|20|21)\\d\\d(?:0\\d|10|11|12)(?:(?:[0-2]\\d)|30|31)-(?:[01]\\d|2[0-3])(?:[0-5]\\d)(?:[0-5]\\d)-[\\da-fA-F]{32}.*"])
+		{
+			shoulDReCalc = NO;
 			ret = [fileTrunk substringToIndex:13];
 		}
-		else
+		else {
+			shoulDReCalc = YES;
+		}
+		
+		if (shoulDReCalc)
 		{
 			NSDate *date = (NSDate*)[[fileMgr attributesOfItemAtPath:filePath error:NULL] objectForKey:NSFileModificationDate];
-			ret = [AMCTools timeStringForDate:date withDateFormat:@"YYYYMMdd-HHmmSS"];
+			ret = [AMCTools timeStringForDate:date withDateFormat:@"YYYYMMdd-HHmmss"];
 //			AMCDebug(@"Mod time for %@: %@", fileTrunk, ret);
 		}
 		
