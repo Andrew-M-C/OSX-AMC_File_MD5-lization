@@ -115,7 +115,7 @@
 	if (nil == _hdlThreadUpdateFileName)
 	{
 		AMCDebug(@"Start. Current value: %f", [_progress doubleValue]);
-		[_progress setDoubleValue:50.0];
+		[_progress setDoubleValue:0.0];
 		[_progress startAnimation:sender];
 		
 		[_buttonBrowse setEnabled:NO];
@@ -403,13 +403,13 @@
 {
 	double value = ((double)index) / ((double)amount) * 100.0;
 	
-	if (NO == [AMCTools isInMainThread])
+	if ([AMCTools isInMainThread])
 	{
 		[_progress setDoubleValue:value];
 	}
 	else
 	{
-		[_progress performSelectorOnMainThread:@selector(_setProgressDoubleNumber:)
+		[self performSelectorOnMainThread:@selector(_setProgressDoubleNumber:)
 									withObject:[NSNumber numberWithDouble:value]
 								 waitUntilDone:NO];
 	}
