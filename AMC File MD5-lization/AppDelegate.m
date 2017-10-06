@@ -187,6 +187,7 @@
 }}
 
 
+#pragma mark - Important logic
 - (void)_filterImageFileIn:(NSString*)dir
 				  fileName:(NSString*)file
 			   fileManager:(NSFileManager*)fileManager
@@ -265,10 +266,12 @@
 		fileManager:(NSFileManager*)fileMagager
 {
 	NSString *dateStr = [self _modificationTimeStringOfFile:[NSString stringWithFormat:@"%@/%@", dir, file] fileManager:fileMagager];
+	AMCPrintf("dateStr: %s", [dateStr UTF8String]);
 	
 	if ([[NSString stringWithFormat:@"%@-%@.%@", dateStr, newName, extension] isEqualToString:file])
 	{
 		// nothing to be done
+		AMCPrintf("Skip %s", [file UTF8String]);
 	}
 	else
 	{
@@ -280,6 +283,7 @@
 		while ([AMCTools isFileExist:fullPath])
 		{
 			tmp ++;
+			AMCPrintf("File %s exist", [[fullPath lastPathComponent] UTF8String]);
 			AMCRelease(fullPath);
 			fullPath = [NSString stringWithFormat:@"%@/%@-%@(%02ld).%@", dir, dateStr, newName, tmp, extension];
 		}
@@ -287,6 +291,8 @@
 		[fileMagager moveItemAtPath:[NSString stringWithFormat:@"%@/%@", dir, file]
 							 toPath:fullPath
 							  error:NULL];
+		AMCPrintf("File %s", [file UTF8String]);
+		AMCPrintf("File %s", [[fullPath lastPathComponent] UTF8String]);
 	}
 }
 
@@ -315,7 +321,7 @@
 	matchesRegularExpression:@"^(?:19|20|21)\\d\\d(?:0\\d|10|11|12)(?:(?:[0-2]\\d)|30|31)-(?:[01]\\d|2[0-3])(?:[0-5]\\d)(?:[0-5]\\d)-[\\da-fA-F]{32}.*"])
 		{
 			shoulDReCalc = NO;
-			ret = [fileTrunk substringToIndex:13];
+			ret = [fileTrunk substringToIndex:15];
 		}
 		else {
 			shoulDReCalc = YES;
@@ -325,8 +331,10 @@
 		{
 			NSDate *date = (NSDate*)[[fileMgr attributesOfItemAtPath:filePath error:NULL] objectForKey:NSFileModificationDate];
 			ret = [AMCTools timeStringForDate:date withDateFormat:@"YYYYMMdd-HHmmss"];
-//			AMCDebug(@"Mod time for %@: %@", fileTrunk, ret);
+			AMCDebug(@"Mod time for %@: %@", fileTrunk, ret);
 		}
+		else
+		{}
 		
 		return ret;
 	}
